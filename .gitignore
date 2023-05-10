@@ -1,0 +1,9 @@
+.idea
+node_modules
+.yarn
+ios/build
+ios/Pods
+ios/RNWrapper.xcodeproj/xcuserdata
+ios/RNWrapper.xcodeproj/project.xcworkspace
+ios/RNWrapper.xcworkspace
+ios/Podfile.lock

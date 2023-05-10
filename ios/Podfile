@@ -1,0 +1,15 @@
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+platform :ios, '16.0'
+use_frameworks!
+use_react_native!
+target 'RNWrapper' do
+  pod "Yoga", :path => '../node_modules/react-native/ReactCommon/yoga'
+  pod "DoubleConversion", :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod "glog", :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
+  pod "RCT-Folly", :podspec => '../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec'
+  pod 'boost', :podspec => '../node_modules/react-native/third-party-podspecs/boost.podspec'
+
+  #RN files
+  pod 'React', :path => '../node_modules/react-native/'
+  pod 'React-Core', :path => '../node_modules/react-native/'
+end
